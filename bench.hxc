@@ -1,0 +1,10 @@
+
+var startTime = Date.now().getTime();
+// Bench
+var n = 0;
+for(i in 0...1000000000) n += 1;
+
+trace(Date.now().getTime() - startTime);
+trace(n);
+
+// 18 minutes (1084233 ms) on my machine 💀 HScript Polymod 1.8.0
